@@ -69,8 +69,12 @@
 $( document )
   .find( 'link' )
   .not( '.normal' )
-  .each(function(){ console.log( 'Link detected.' ); })
-  .on( 'click', function(){ alert( 'You found a link'. ); })
+  .each(function(){
+    console.log( 'Link detected.' );
+  })
+  .on( 'click', function(){
+    alert( 'You found a link'. );
+  })
   .wrap( 'blink' )
   .css( 'color', 'red' )
   .hide()

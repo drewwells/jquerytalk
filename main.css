@@ -113,11 +113,14 @@ article h2 {
 
     margin-top: 25%;
 }
+pre, ul{
+    text-align: left;
+}
 
 ul {
     line-height: 2em;
-    text-align: left;
 }
+
 
 .center{
 
