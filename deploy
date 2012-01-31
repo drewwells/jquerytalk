@@ -1,0 +1,1 @@
+rsync -vaz iloveyou drew@drewwells:/home/drew/www --exclude '.git'

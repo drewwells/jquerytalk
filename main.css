@@ -1,0 +1,167 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:500);
+@import url(http://fonts.googleapis.com/css?family=Salsa);
+
+html{
+    font: 500 30px "Ubuntu";
+}
+
+article:nth-child(even){
+    font-family: "Salsa";
+}
+
+body{
+    overflow: hidden;
+    width: 100%;
+    z-index: 8;
+
+    display: -webkit-box;
+    display: -moz-compact;
+    display: -o-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-box-pack: center;
+    box-pack: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+
+    -webkit-transition: background-color 0.8s ease-in-out .4s, opacity 1.2s ease-in-out;
+    -moz-transition: background-color 0.8s ease-in-out .4s, opacity 1.2s ease-in-out;
+    transition: background-color 0.8s ease-in-out .4s, opacity 1.2s ease-in-out;
+
+}
+
+#container{
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 9;
+
+    position: relative;
+    width: 850px;
+    height: 695px;
+    padding: 10px;
+
+}
+/* Colors */
+body {
+    background-color: #eee8d5;
+}
+
+body.odd {
+    background-color: #93a1a1;
+}
+
+article{
+    background-color: #fdf6e3;
+    color: #657b83;
+    box-shadow: 0 3px 15px #002b36;
+}
+a,a:visited{
+    color: #d33682;
+    text-decoration: none;
+}
+
+article{
+
+    position: absolute;
+    width: 850px;
+    height: 675px;
+    opacity: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border-radius: 40px;
+    padding: 1em 2em;
+
+    -webkit-transition: -webkit-transform 0.8s ease-in-out, opacity 1.2s ease-in-out;
+    -moz-transition: -webkit-transform 0.8s ease-in-out, opacity 1.2s ease-in-out;
+    transition: -webkit-transform 0.8s ease-in-out, opacity 1.2s ease-in-out;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+
+    text-align: center;
+}
+
+article.no-transition{
+
+    -webkit-transition-duration: 0 !important;
+    -moz-transition-duration: 0 !important;
+    transition-duration: 0 !important;
+}
+
+article h2 {
+
+    margin-top: 25%;
+}
+
+ul {
+    line-height: 2em;
+    text-align: left;
+}
+
+.center{
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    display: box;
+}
+
+.current{
+    z-index: 9;
+    opacity: 1;
+    -webkit-transform: translatez(-600px) rotatey(0deg) translatez(600px);
+    -moz-transform: translatez(-600px) rotatey(0deg) translatez(600px);
+    -o-transform: translatez(-600px) rotatey(0deg) translatez(600px);
+    transform: translatez(-600px) rotatey(0deg) translatez(600px);
+}
+.past{
+
+    opacity: 0.0;
+    -webkit-transform: translatez(-600px) rotatey(-90deg) translatez(600px);
+    -moz-transform: translatez(-600px) rotatey(-90deg) translatez(600px);
+    -o-transform: translatez(-600px) rotatey(-90deg) translatez(600px);
+    transform: translatez(-600px) rotatey(-90deg) translatez(600px);
+}
+.future{
+
+    opacity: 0;
+    -webkit-transform: translatez(-600px) rotatey(90deg) translatez(600px);
+    -moz-transform: translatez(-600px) rotatey(90deg) translatez(600px);
+    -o-transform: translatez(-600px) rotatey(90deg) translatez(600px);
+    transform: translatez(-600px) rotatey(90deg) translatez(600px);
+}
+.far-future{
+    opacity: 0;
+    -webkit-transform: translatez(-600px) rotatex(90deg) translatez(600px);
+    -moz-transform: translatez(-600px) rotatex(90deg) translatez(600px);
+    -o-transform: translatez(-600px) rotatex(90deg) translatez(600px);
+    transform: translatez(-600px) rotatex(90deg) translatez(600px);
+}
+.far-past{
+    -webkit-transform: translatez(-600px) rotatex(-90deg) translatez(600px);
+    -moz-transform: translatez(-600px) rotatex(-90deg) translatez(600px);
+    -o-transform: translatez(-600px) rotatex(-90deg) translatez(600px);
+    transform: translatez(-600px) rotatex(-90deg) translatez(600px);
+}

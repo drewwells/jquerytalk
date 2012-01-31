@@ -1,0 +1,141 @@
+<!DOCTYPE>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+    <div id="container">
+
+        <article class="current">
+            <h2>jQuery Talk</h2>
+            <p>
+                Use the arrow keys to navigate ->, <- or use touch screen.
+            </p>
+            <p>
+                Up and down skips 10 forward or backwards.
+            </p>
+        </article>
+        <article>
+            <h3>Topics</h3>
+            <ul>
+                <li>Execution Order</li>
+                <li>Code Organization</li>
+                <li>Effective jQuery</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Execution Order</h3>
+            <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/MLrZR/2/embedded/html,result/light" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </article>
+        <article>
+            <h3>Execution Order</h3>
+
+            <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/jsRgV/3/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </article>
+        <article>
+            <h3>Execution Order</h3>
+            <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/jsRgV/4/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </article>
+        <article>
+            <h3>Execution Order</h3>
+            <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/jsRgV/5/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </article>
+        <article>
+            <h3>Code Organization</h3>
+            <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/R8K2a/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </article>
+        <article>
+            <h3>Code Organization</h3>
+            <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/R8K2a/1/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </article>
+        <article>
+            <h3>Code Organization</h3>
+            <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/xGwKj/1/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </article>
+        <article>
+            <h3>Code Organization</h3>
+            <h4>Function Expression vs Function Declaration</h4>
+            <iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/vRqXt/3/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </article>
+        <article>
+            <h3>Code Organization</h3>
+            <h4>Function Expression vs Function Declaration</h4>
+            <iframe style="width: 100%; height: 400px" src="http://jsfiddle.net/vRqXt/2/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </article>
+        <article>
+            <h3>Code Organization</h3>
+            <h1><blink>Don't abuse the chain!</blink></h1>
+            <pre style="text-align: left;">
+$( document )
+  .find( 'link' )
+  .not( '.normal' )
+  .each(function(){ console.log( 'Link detected.' ); })
+  .on( 'click', function(){ alert( 'You found a link'. ); })
+  .wrap( 'blink' )
+  .css( 'color', 'red' )
+  .hide()
+  .trigger( 'theyClickedIt' );
+            </pre>
+        </article>
+        <article>
+            <h3>Code Organization</h3>
+            <iframe style="width: 100%; height: 325px" src="http://jsfiddle.net/sFHTy/3/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </article>
+        <article>
+            <h3>Code Organization</h3>
+            <iframe style="width: 100%; height: 325px" src="http://jsfiddle.net/sFHTy/4/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </article>
+        <article>
+            <h3>Code Organization</h3>
+            <h4>Call</h4>
+            <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/Z8r5X/embedded/js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+            <h4>But wait, how do I use this with jQuery?</h4>
+        </article>
+        <article>
+            <h3>Code Organization</h3>
+            <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/Vwvpm/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+        </article>
+        <article>
+            <h3>Effective jQuery</h3>
+            <pre>
+$( 'div' ).doStuff();
+$( 'div' ).doMoreStuff();
+$( 'div' ).doMoreMoreStuff();
+$( 'div' ).doMoreMoreMoreStuff();
+            </pre>
+        </article>
+        <article>
+            <h3>Effective jQuery</h3>
+            <h4>Context, help jQuery out</h4>
+            <h4>$parentElement.find()</h4>
+        </article>
+        <article>
+            <h3>Effective jQuery</h3>
+        </article>
+        <article>
+            <h3>Effective jQuery</h3>
+        </article>
+        <article>
+
+        </article>
+        <article>
+
+        </article>
+        <article>
+
+        </article>
+    </div>
+</body>
+<script type="text/javascript" src="main.js" ></script>
+<!--<script type="text/javascript" src="phantom-limb/phantomLimb.js" ></script>
+<script type="text/javascript">
+    phantomLimb.init({
+      force: false,
+      src: 'phantom-limb/limb-black.png',
+      x: 100,
+      y: -5,
+      opacity: 1,
+      lefty: false
+    });
+</script>-->
+</html>
