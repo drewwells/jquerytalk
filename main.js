@@ -231,4 +231,11 @@
         return true;
     };
 
+    (function(){
+        var iframes = document.querySelectorAll( 'iframe' );
+        for( var i = 0; i < iframes.length; i++  ){
+            iframes[i].src = iframes[i].dataset.src;
+        }
+    })();
+
 })();
