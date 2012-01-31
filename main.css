@@ -15,7 +15,7 @@ body{
     z-index: 8;
 
     display: -webkit-box;
-    display: -moz-compact;
+    display: -moz-box;
     display: -o-box;
     display: -ms-box;
     display: box;
@@ -87,8 +87,8 @@ article{
     padding: 1em 2em;
 
     -webkit-transition: -webkit-transform 0.8s ease-in-out, opacity 1.2s ease-in-out;
-    -moz-transition: -webkit-transform 0.8s ease-in-out, opacity 1.2s ease-in-out;
-    transition: -webkit-transform 0.8s ease-in-out, opacity 1.2s ease-in-out;
+    -moz-transition: -moz-transform 0.8s ease-in-out, opacity 1.2s ease-in-out;
+    transition: transform 0.8s ease-in-out, opacity 1.2s ease-in-out;
 
     -webkit-box-pack: center;
     -moz-box-pack: center;
